@@ -218,7 +218,7 @@ Do you want to perform these actions?
   Enter a value: yes
 
 google_bigquery_dataset.demo_dataset: Creating...
-google_bigquery_dataset.demo_dataset: Creation complete after 2s [id=projects/atomic-athlete-405617/datasets/de_zoomcamp_hw_dataset]
+google_bigquery_dataset.demo_dataset: Creation complete after 2s [id=projects/xxxx-yyyy-11111/datasets/de_zoomcamp_hw_dataset]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 ```
