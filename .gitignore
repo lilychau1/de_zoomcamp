@@ -33,6 +33,17 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-*.json
+**/*.json
+**/.env
+**/logs
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+.idea
+# C extensions
+*.so
 
 week_1/homework/docker/ny_taxi_postgres_data
+week_2/docker_compose_for_airflow/ny_taxi_airflow_postgres_data
