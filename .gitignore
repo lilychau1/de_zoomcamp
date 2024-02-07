@@ -45,5 +45,5 @@ __pycache__/
 # C extensions
 *.so
 
-week_1/homework/docker/ny_taxi_postgres_data
-week_2/docker_compose_for_airflow/ny_taxi_airflow_postgres_data
+01-gcp-docker-terraform/homework/docker/ny_taxi_postgres_data
+02-workflow-orchestration/docker_compose_for_airflow/ny_taxi_airflow_postgres_data
