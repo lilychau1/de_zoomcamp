@@ -17,6 +17,7 @@ yellow_trip_data as (
     from {{ ref('stg_external_yellow_trip_data') }}
 ),
 
+-- concatenate trips from both green and yellow taxi
 trips_unioned as (
     select * from green_trip_data
     union all
