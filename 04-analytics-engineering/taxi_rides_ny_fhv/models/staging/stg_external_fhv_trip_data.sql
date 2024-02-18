@@ -5,8 +5,9 @@
 }}
 with tripdata as 
 (
-    select *, 
-    row_number() over (partition by dispatching_base_num, pickup_datetime) as rn
+    select *
+    -- select *,
+    -- row_number() over (partition by dispatching_base_num, pickup_datetime) as rn
     from {{ source('staging', 'external_fhv_trip_data') }}
     where dispatching_base_num is not null
 )
@@ -22,7 +23,9 @@ select
     cast(dropOff_datetime as timestamp) as dropoff_datetime,
     cast(SR_Flag as integer) as sr_flag
 from tripdata
-where rn = 1
+-- where rn = 1
+where   PUlocationID != 0 -- During parquet ingestion, Nan values were replaced by 0 before casting to integer type
+and   DOlocationID != 0
 
 -- dbt build --select <model_name> --vars '{"is_test_run": false}'
 {% if var('is_test_run', default=true) %}
