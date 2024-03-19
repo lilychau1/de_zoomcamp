@@ -1,5 +1,8 @@
 # Change log
 
+## 19-03-2024
+- Added Week 6 hoomework and relevant files
+
 ## 08-03-2024
 - Added Workshop 2 homework
 
